@@ -26,7 +26,7 @@ public final class Logic {
             Figure figure = figures[i];
             for (Cell cell : steps) {
                 if (figure.position().equals(cell)) {
-                    throw new OccupiedCellException("");
+                    throw new OccupiedCellException("Вы не можете передвинуть фигуру на занимаемую ячейку");
                 }
              }
         }
